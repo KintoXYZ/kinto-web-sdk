@@ -1,0 +1,24 @@
+{
+  "name": "kinto-web-sdk",
+  "version": "1.0.0",
+  "description": "Kinto Wallet SDK for app development",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KintoXYZ/kinto-web-sdk.git"
+  },
+  "keywords": [
+    "kinto",
+    "ethereum",
+    "l2"
+  ],
+  "author": "Ramon Recuero",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/KintoXYZ/kinto-web-sdk/issues"
+  },
+  "homepage": "https://github.com/KintoXYZ/kinto-web-sdk#readme"
+}
