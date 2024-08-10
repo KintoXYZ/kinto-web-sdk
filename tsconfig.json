@@ -1,0 +1,27 @@
+
+{
+  "compilerOptions": {
+    "lib": [
+      "es2020",
+      "dom",
+      "dom.iterable",
+      "esnext",
+      "ES6"
+    ],
+    "declaration": true,
+    "outDir": "./dist",
+    "strict": true,
+    "esModuleInterop": true,
+    "allowJs": true,
+    "skipLibCheck": true,
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "target": "es2020",
+  },
+  "include": ["src"]
+}
