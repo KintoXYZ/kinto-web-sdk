@@ -23,7 +23,7 @@ Kinto SDK is a JavaScript library that allows applications to connect to the Kin
 You can install the Kinto SDK via npm:
 
 ```bash
-npm install my-kinto-sdk
+npm install kinto-web-sdk
 ```
 
 ## Usage
@@ -33,7 +33,7 @@ npm install my-kinto-sdk
 To use the Kinto SDK, you need to initialize it with your application's address.
 
 ```javascript
-import { createKintoSDK } from 'my-kinto-sdk';
+import { createKintoSDK } from 'kinto-web-sdk';
 
 const appAddress = 'your-app-address';
 const kintoSDK = createKintoSDK(appAddress);
