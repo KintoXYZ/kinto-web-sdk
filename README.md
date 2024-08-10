@@ -77,15 +77,17 @@ kintoSDK.sendTransaction(transactions)
 
 ### Creating a New Wallet
 
-To create a new wallet, use the `createNewWallet` method. This method opens a popup for the user to create a new wallet.
+To create a new wallet, use the `createNewWallet` method. This method opens a popup for the user to create a new wallet in Kinto website. Alternatively, you can instruct users to visit [Kinto](https://engen.kinto.xyz/onboarding) to create an account.
 
-`kintoSDK.createNewWallet()`
-`.then(() => {`
-`  console.log('New wallet created successfully');`
-`})`
-`.catch((error) => {`
-`  console.error('Failed to create new wallet:', error);`
-`});`
+```javascript
+kintoSDK.createNewWallet()
+  .then(() => {
+    console.log('New wallet created successfully');
+  })
+  .catch((error) => {
+    console.error('Failed to create new wallet:', error);
+  });
+```
 
 ## API
 
