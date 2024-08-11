@@ -1,4 +1,4 @@
-# Kinto SDK
+# Kinto Wallet SDK
 
 Kinto SDK is a JavaScript library that allows applications to connect to the Kinto Wallet. Kinto is an Ethereum Layer 2 (L2) solution designed to provide fast and cost-efficient transactions. This SDK provides methods to connect a Kinto Wallet, send transactions, and create new wallets.
 
@@ -7,6 +7,7 @@ Kinto SDK is a JavaScript library that allows applications to connect to the Kin
 - [Principles](#principles)
 - [Installation](#installation)
 - [Usage](#usage)
+  - [Prerequisites](#prerequisites)
   - [Initialization](#initialization)
   - [Connecting to Kinto Wallet](#connecting-to-kinto-wallet)
   - [Sending Transactions](#sending-transactions)
@@ -39,6 +40,14 @@ npm install kinto-web-sdk
 ```
 
 ## Usage
+
+### Prerequisites
+
+Before using the Kinto SDK, ensure you have completed the following steps:
+
+1. **Kinto Wallet**: You need to have a Kinto wallet. Create an account by visiting [Kinto Onboarding](https://engen.kinto.xyz/onboarding).
+
+2. **Developer Account**: Create a developer account, deploy a contract, and create the application. Use your main contract address as the app address. Visit [Kinto Developers](https://engen.kinto.xyz/developers) to get started.
 
 ### Initialization
 
