@@ -4,6 +4,7 @@ Kinto SDK is a JavaScript library that allows applications to connect to the Kin
 
 ## Table of Contents
 
+- [Principles](#principles)
 - [Installation](#installation)
 - [Usage](#usage)
   - [Initialization](#initialization)
@@ -15,8 +16,19 @@ Kinto SDK is a JavaScript library that allows applications to connect to the Kin
     - [connect()](#connect)
     - [sendTransaction()](#sendtransaction)
     - [createNewWallet()](#createnewwallet)
+  - [Types](#types)
 - [Contributing](#contributing)
 - [License](#license)
+
+## Design Principles
+
+The Kinto SDK has been designed with the following principles in mind:
+
+- **No Dependencies**: The SDK is built without external dependencies to minimize its size and maximize security. This ensures that it doesn't rely on any third-party libraries.
+
+- **No UI**: The SDK does not provide any user interface components. This allows app developers the flexibility to design their own UI and remain unopinionated about the user experience.
+
+- **No Web3 Packages**: The SDK is agnostic to specific Ethereum libraries. You can use any library you prefer, such as `viem`, `ethers`, or `web3js`. The SDK itself doesn't require any of these packages.
 
 ## Installation
 
@@ -112,6 +124,48 @@ Sends transactions through the Kinto Wallet.
 Opens a popup for the user to create a new wallet.
 
 **Returns**: `Promise<void>`
+
+### Types
+
+#### AppMetadata
+
+```javascript
+export interface AppMetadata {
+  parent: `0x${string}`;
+  paymasterBalance: number;
+  tokenId: number;
+  dsaEnabled: boolean;
+  rateLimitPeriod: number;
+  rateLimitNumber: number;
+  gasLimitPeriod: number;
+  gasLimitCost: number;
+  name: string;
+  devEOAs: string[];
+  appContracts: string[];
+}
+```
+
+#### KintoAccountInfo
+
+```javascript
+export interface KintoAccountInfo {
+  exists: boolean;
+  approval?: boolean;
+  walletAddress?: `0x${string}`;
+  app: AppMetadata;
+  appKey?: `0x${string}`;
+}
+```
+
+#### TxCall
+
+```javascript
+export interface TxCall {
+  to: `0x${string}`;
+  data: `0x${string}`;
+  value: bigint;
+}
+```
 
 ## Contributing
 
